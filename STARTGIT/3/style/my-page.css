@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+  } 
+  
+  body{
+      background-color: yellow;
+      /* font-size: 40px; */
+  }
+  h2{
+      color:blueviolet;
+  }
+  p{
+      color:green;
+  }
+  /* h3{
+      color:yellow;
+  }
+  h4{
+      color:yellow;
+  } */
+  /* DRY - Don't repeat yourself */
+  h3, h4{
+      color:yellow;
+  }
+  
+  h2{
+      color:black;
+  }
+  
+  p a{
+      color:red;
+  }
+  a{
+      color:rgb(48, 6, 80);
+  }
+  p span{
+      color:rgb(243, 6, 200);
+  }
+  div p{
+      color:red;
+  }
+  div p span{
+      color:yellow;
+  }
+  #id-section p{
+      color:darkblue;
+  }
+  #id-section span{
+      color:darkcyan;
+  }
+  .text-block p{
+      color:#000; 
+      /* hex color code */
+  }
+  .text-block p span{
+      /* color:rgb(75, 24, 177); */
+      color: hsl(0, 100%, 50%);
+  }
+  
+  .text-block.big-size-text p{
+      font-size: 40px;
+  }
+  .text-block.big-size-text p span{
+      font-size: 34px;
+  }
+  
+  .big-size-text p{
+      font-size: 34px;
+  }
+  .big-size-text p span{
+      font-size: 28px;
+  }
+  
+  ul li{
+      color:yellow;
+  }
+  /* .first-li-item{
+      color:blue;
+  } */
+  ul li:first-child{
+      color:lightblue;
+  }
+  ul li:last-child{
+      color:rgb(53, 4, 42);
+  }
+  ul li:nth-child(2),
+  ul li:nth-child(4){
+      color:blue;
+  }
+  
+  input[type="text"]{
+      color:rgb(11, 14, 185);
+  }
+  /* h1-6, p, div, section, header, footer, main, nav, form блочні і мають ширину на ширину екрану а також розташовуються один під одним */
+  div{
+      background-color: rgb(85, 85, 97);
+      width: 500px;
+      /* height: 500px; */
+      /* padding: ; */
+      /* padding-top: 50px;
+      padding-bottom: 50px;
+      padding-right: 100px;
+      padding-left: 100px; */
+      /* padding: 35px 70px 100px 50px; */
+      padding: 50px 100px;
+      /* margin: ; */
+      margin: 50px auto;
+      /* margin-top: 100px;
+      margin-left: 500px;
+      margin-right: 5px;
+      margin-bottom: 200px; */
+  }
