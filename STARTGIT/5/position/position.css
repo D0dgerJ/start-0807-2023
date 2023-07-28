@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* div{
+    position: static;
+    position: relative;
+    position: absolute;
+    position: fixed;
+    position: sticky;
+} */
+header{
+    background-color: yellow;
+    padding: 50px;
+    position: sticky;
+    /* position: fixed; */
+    top: 0;
+    z-index: 2;
+}
+.up{
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+section {
+    background-color: green;
+    padding: 40px;
+}
+p{
+    width: 100px;
+    margin: 0 auto;
+}
+section div{
+    background-color: whitesmoke;
+    display: inline-block;
+    position: relative;
+    /* bottom: ;
+    left: ;
+    right: ; */
+    padding: 50px;
+}
+.rel{
+    position: relative;
+    background-color: red;
+}
+.one{
+    top:50px;
+    left: 75px;
+    border: 1px solid black;
+    z-index: 1;
+}
+.abs{
+    position: absolute;
+    padding: 40px;
+    background-color: grey;
+    top: 30px;
+}
+.hower-card{
+    width: 150px;
+    height: 200px;
+    position: relative;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+    padding: 50px 0;
+    overflow: hidden;
+}
+.card-info{
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    top: -250px;
+    background-color: black;
+    color:red;
+    text-align: center;
+    padding: 50px 0;
+}
+.hower-card:hover .card-info{
+    top: 50px;
+}
+h1{
+    position: relative;
+    padding: 0 100px;
+    text-align: center;
+    display: inline-block;
+}
+h1::after,
+h1::before{
+    content: "";
+    color: white;
+    display: block;
+    background-color: rgb(12, 232, 12);   
+    height: 5px;
+    width: 85px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10px;
+}
+
+h1::before{
+    /* margin-bottom: 50px; */
+    left: 0;
+}
+h1::after{
+    right: 0;
+}

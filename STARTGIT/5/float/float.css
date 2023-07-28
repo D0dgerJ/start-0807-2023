@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    width: 600px;
+    margin: 0 auto;
+    background-color: green;
+}
+.logo{
+    /* width: 300px; */
+    /* display: inline-block; */
+    background-color: yellow;
+    padding: 50px;
+    float: left;
+}
+.social{
+    width: 300px;
+    /* display: inline-block; */
+    background-color: red;
+    padding: 50px;
+    float: right;
+}
+.clear::before,
+.clear::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.float-img{
+    float: left;
+}
