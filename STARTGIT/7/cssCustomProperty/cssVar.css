@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    color: white;
+    background-color: black;
+}
+.title{
+    font-size: 20px;
+    color: red;
+}
+
+body.light{
+    background-color: white;
+    color: black;
+}

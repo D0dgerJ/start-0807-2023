@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+
+header{
+    background-color: orange;
+    padding: 20px 0;
+}
+.container{
+    width: 65%;
+    margin: 0 auto;
+}
+.content-style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+}
+.logo>img{
+    width: 100%;
+}
+/* nav{
+    width: 70%;
+} */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+    min-height: 100vh;
+    border-bottom: 3px solid orange;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 20px;
+}
+.mobile-menu{
+    display: none;
+}
+a{
+    color:black;
+    text-decoration: none;
+    font-size: 30px;
+}
+/* min-width більше якогось значення  mobile-first*/
+/* @media screen and (min-width: 768px) {
+    header{
+        background-color: blueviolet;
+    }    
+    section{
+        background-color: yellowgreen;
+    }
+}
+@media screen and (min-width: 900px) {
+    header{
+        background-color: rgb(223, 18, 134);
+    }    
+    section{
+        background-color: rgb(98, 98, 98);
+    }
+    h1{
+        font-size: 3vw;
+    }
+    h2{
+        font-size: 2vw;
+    }
+} */
+/* max-width: спрацьовує коли ширина екрана менше вказаного запита */
+@media screen and (max-width: 768px) {
+    header{
+        background-color: blueviolet;
+    }    
+    section{
+        background-color: yellowgreen;
+    }
+}
+/* ctrl + shift + M */
+@media screen and (max-width: 420px) {
+    header{
+        background-color: rgb(243, 10, 96);
+        padding: 10px 0;
+    }    
+    section{
+        background-color: rgb(15, 16, 15);
+    }
+    h1{
+        color: white;
+        font-size: 3vw;
+    }
+    h2{
+        color: white;
+        font-size: 2vw;
+    }
+    nav a{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .content-style{
+        flex-direction: column;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+}

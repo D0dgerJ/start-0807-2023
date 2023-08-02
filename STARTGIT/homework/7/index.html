@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kyiv+Type+Titling&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <div class="netflix">
+                        <img src="img/netflixlogo.png" alt="">
+                    </div>
+                    <div class="date">
+                        <span></span>
+                        <p id="date-display"></p>
+                        <script src="scripts/date-display.js"></script>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="search">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                    <div class="circle">
+                        <a href="#"><img src="img/Ellipse2.png" alt="Profile Image"></a>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        <section>
+            <div class="center">
+                <div class="genre">
+                    Drama
+                    <span></span>Thriller<span></span>
+                    Supernatural
+                </div>
+                <div class="movie-name">
+                    Stranger Things
+                </div>
+                <div class="short-info">
+                    2019
+                    <span class="line"></span>
+                    DIRECTOR: <span class="grey">Shawn Levy</span>
+                    <span class="line"></span>
+                    seasons: <span class="grey">3 (5 Episodes)</span>
+                </div>
+                <div class="description">
+                    In 1980s Indiana, a group of young friends witness supernatural forces 
+                    and secret government exploits. As they search for answers, the children 
+                    unravel a series of extraordinary mysteries.
+                </div>
+                <div class="stars">
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="watch-bt">
+                    <button id="toastButton">STREAM NOW  <i class="fa-solid fa-circle-play"></i></button>
+                    <button id="toastButton">ALL EPISODES</button>
+                    <div id="toast" class="hide">
+                        <img src="img/trollface.png" alt="Toast Image">
+                        <audio id="toastSound">
+                            <source src="mp3/trollface.mp3" type="audio/mpeg">
+                          </audio>
+                    </div>
+                    <script src="scripts/toast.js"></script>
+                    <script src="button.js"></script>
+                </div>
+                
+                <div class="block-movies">
+                    <div class="week-bt">
+                        <div class="week">
+                            POPULAR THIS WEEK
+                        </div>
+                        <div class="next-bt">
+                            <a href="#"><i class="fa-solid fa-circle-chevron-right fa-rotate-180"></i></a>
+                            <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="movie">
+                        <img src="img/Rectangle6.png" alt="Breaking Bad">
+                        <img src="img/Rectangle7.png" alt="The rain">
+                        <img src="img/Rectangle8.png" alt="Life in a year">
+                        <img src="img/Rectangle9.png" alt="Money heist: Korea">
+                        <img src="img/Rectangle11.png" alt="Squid game">
+                    </div>
+                </div>
+                <div class="age">
+                    16+
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+
+</body>
+</html>
