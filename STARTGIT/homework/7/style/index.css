@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .main{
-    background-image: url(img/Rectangle1.png);
+    background-image: url(../img/Rectangle1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -30,10 +30,14 @@
 .netflix img{
     max-width: 100%;
 }
+@font-face {
+    font-family: 'Kyiv Type Titling';
+    src: url(KyivTypeTitling/KyivTypeTitling-VarGX.ttf) format('truetype');
+  }
 .date{
     color: #C8C8C8;
     font-size: 24px;
-    font-family: "Kyiv*Type Titling", sans-serif;
+    font-family: 'Kyiv Type Titling', sans-serif;   
 }
 .date span{
     position: relative;
