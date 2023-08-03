@@ -26,6 +26,8 @@
 }
 .netflix{
     margin-right: 30px;
+    border-right: 3px solid white;
+    padding-right: 20px;
 }
 .netflix img{
     max-width: 100%;
@@ -73,9 +75,19 @@
     font-family: 'Inter', sans-serif;
     margin-top: 70px;
 }
+.genre-separator,
+.info-separator {
+    display: inline-block;
+    width: 3px;
+    height: 30px;
+    background: white;
+    vertical-align: middle;
+    margin: 0 10px;
+}
 .genre{
     display: flex;
     gap: 1.5vw;
+    align-items: center;
     font-size: 32px;
     max-width: 100%;
 }
@@ -99,6 +111,7 @@
 .short-info{
     display: flex;
     gap: 1vw;
+    align-items: center;
     font-size: 28px;
     min-width: 100%;
 }
@@ -240,7 +253,7 @@
     bottom: 100px;
     right: 0px;
     width: 10%;
-    padding: 15px 15px;
+    padding: 25px 15px;
     border-left: 20px solid #D40D1F;
 }
 @media screen and (max-width: 960px) {
