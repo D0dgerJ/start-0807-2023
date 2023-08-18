@@ -295,7 +295,17 @@
     }
     .netflix{
         max-width: 40%;
+        border-right: 1px solid white;
     }
+    .genre-separator,
+    .info-separator {
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background: white;
+    vertical-align: middle;
+    margin: 0 10px;
+}
     .block-movies{
         max-width: 100%;
     }
