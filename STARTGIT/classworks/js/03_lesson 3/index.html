@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class work</title>
+    <style>
+        table{
+            width: 50%;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        td,th{
+            border: 1px solid black;
+        }
+
+        .blue{
+            background-color: blue;
+            display: inline-block;
+            padding: 1rem;
+            border-radius: .5rem;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">➕ Додати нового частина</button>
+    <table>
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Імя</th>
+                <th>Прізвище</th>
+                <th>Мова програмування</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+        <tfoot>
+            <tr>
+                
+                <th colspan="3">Всього в таблиці учасників</th>
+                <td id="count"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="./code/index.js"></script>
+</body>
+</html>

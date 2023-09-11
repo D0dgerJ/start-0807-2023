@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+        /*
+        const theNun2 = {
+            name: `Монахиня 2"`,
+            age: "16+",
+            year: 2023,
+            originalName: `The Last Voyage of the Demeter`,
+            director: "Андре Овредал ( «Страшні історії для розповіді у темряві»).",
+            period: ["24.08.2023", "06.09.2023"],
+            lang: "Українська мова",
+            genre: ["Жахи", "Трилер"],
+            duraction: "1:58",
+            description: "1956 рік, Франція. Убито священика. Зло поширюється. Сиквел всесвітньо відомого хіта «Монахиня» розповідає продовження історії сестри Ірен, коли вона знову стикається віч-на-віч з Валак, демонічною черницею.",
+            image: "https://multiplex.ua/images/d5/d1/d5d1190d25eb7cb8cb1a17284e2516e2.jpeg"
+        }
+        const hypnotic = {
+            name: `Під гіпнозом`,
+            age: "16+",
+            year: 2023,
+            originalName: `The Last Voyage of the Demeter`,
+            director: "Андре Овредал ( «Страшні історії для розповіді у темряві»).",
+            period: ["24.08.2023", "06.09.2023"],
+            lang: "Українська мова",
+            genre: ["Жахи", "Трилер"],
+            duraction: "1:58",
+            description: "Детектив поліції Денні Рурк (Бен Аффлек) втратив доньку - дівчинка зникла безвісти посеред дитячого майданчика. Рік потому поліція отримує таємничий дзвінок: планується пограбування банку і злочинців цікавить тільки одна ячейка - номер 23. Поки Рурк знаходить саме там фото своєї зниклої дочки, люди навколо виконують накази загадкового Діллрейна так, ніби всі вони знаходяться під гіпнозом... Бо їхня реальність дійсно знаходиться під чужим контролем. Дивіться також:",
+            image: "https://multiplex.ua/images/b4/fb/b4fb3b53057713cbe4b2207c738668f0.jpeg"
+        }
+        const demeter = {
+            name: `Остання подорож "Деметри"`,
+            age: "16+",
+            year: 2023,
+            originalName: `The Last Voyage of the Demeter`,
+            director: "Андре Овредал ( «Страшні історії для розповіді у темряві»).",
+            period: ["24.08.2023", "06.09.2023"],
+            lang: "Українська мова",
+            genre: ["Жахи", "Трилер"],
+            duraction: "1:58",
+            description: "Моторошна історія, заснована на класичному романі Брема Стокера «Дракула». «Остання подорож Деметри» розповідає жахливу історію про торгове судно «Деметра», яке було зафрахтоване для перевезення приватного вантажу — п’ятдесяти немаркованих дерев’яних ящиків — із Румунії до Лондона. Звичайна, на перший погляд, подорож перетворюється у химерне дійство, адже команду починає переслідувати невідома сутність… Коли «Деметра» нарешті прибуває до берегів Англії, від екіпажу не залишається й сліду.…",
+            image: "https://multiplex.ua/images/d5/d1/d5d1190d25eb7cb8cb1a17284e2516e2.jpeg",
+            films: [hypnotic, theNun2],
+           
+        }
+
+
+        const films = [
+            demeter, hypnotic, theNun2
+        ]
+
+        films.forEach(function (element) {
+            document.body.innerHTML += showCinema(element)
+        })
+
+
+        function showCinema (film) {
+            const pattern = `
+            <div class="box">
+            <h1>${film.name}</h1>
+            <div><img src="${film.image}"></div>
+            <p>${film.description}</p>
+            </div>
+            `
+            return pattern
+        }
+   
+
+
+        var obj = { 'Коля': '1000', Вася: '500', 'Петя': '200', Ольга: 750.78 };
+
+        const arr = Object.entries(obj)
+
+        const newarr = arr.map(function (element) {
+            const data = logic(element);
+            return data
+        })
+
+        function logic(worker) {
+            return `<p>Зарплата ${worker[0]} за 1 день ${fn(worker[1])} грн, за 1 місяць він працює 24 дні 
+    отримує ${fn(parseFloat(worker[1]) * 24)}  за 1 рік він отримає ${fn(parseFloat(worker[1]) * 288)} грн  та на відпустку ${fn(parseFloat(worker[1]) * 24)}</p>`
+        }
+
+        function show(data) {
+            document.body.innerHTML += data
+        }
+
+        newarr.forEach(function (item) {
+            document.body.innerHTML += item
+        })
+
+        function fn(sum) {
+            if (typeof num !== "number") {
+                sum = parseFloat(sum)
+            }
+            return sum.toFixed(2)
+        }
+
+           */
+           //Виведіть на сторінку назву валюти ціну купівлі та ціну продажу. 
+           //https://api.privatbank.ua/p24api/exchange_rates?json&date=11.01.2021
+    </script>
+
+    <table>
+        <h1 id="h1"></h1>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Валюта</th>
+                <th>Купівля</th>
+                <th>Продаж</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    
+    <script src="./code/data.js"></script>
+    <script src="./code/index.js"></script>
+</body>
+
+</html>

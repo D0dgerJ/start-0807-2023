@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    <script>
+        /*
+        function getPromptInput () {
+            const info = document.getElementById("input").value;
+
+            return info
+        }
+
+        document.body.onclick = function () {
+            const data = getPromptInput()
+            console.log(data)
+        }
+        */
+        // Калькулятор 
+
+        /*
+        function add (a, b) {
+            return a + b
+        }
+
+        function sub (a, b){
+            return a - b
+        }
+
+        function mul (a, b) {
+            return a * b
+        }
+
+        function div (a, b){
+            return a / b
+        }
+
+        function getNumbers() {
+            return [
+                parseFloat(prompt("Введіть число")),
+                parseFloat(prompt("Введіть число")),
+                prompt("Введіть знак", "+-/*")]
+        }
+
+
+        function calculate(callback, add, sub, div, mul) {
+            const arr = callback()
+            // + - / *
+            switch(arr[2]){
+                case "+" : show(`${arr[0]} ${arr[2]} ${arr[1]}`,  add(arr[0], arr[1]));
+                return
+                case "/" : show(`${arr[0]} ${arr[2]} ${arr[1]}`,  div(arr[0], arr[1]));
+                return
+                case "*" : show(`${arr[0]} ${arr[2]} ${arr[1]}`,  mul(arr[0], arr[1]));
+                return
+                case "-" : show(`${arr[0]} ${arr[2]} ${arr[1]}`,  sub(arr[0], arr[1]));
+                return
+            }
+        }
+
+        function show (data, rez) {
+            document.write("Результат Вашої операції" + data + " : " + rez.toFixed(2))
+        }
+
+        calculate(getNumbers, add, sub, div, mul)
+*/
+
+        /*
+                function fn(callback) {
+                    console.log(callback);
+                }
+        
+                const num = Math.floor(Math.random()*50);
+        
+                fn(num % 2 === 0? alert: prompt)
+        */
+
+        /*
+        
+        Дано рядок виду 'var_text_hello'. Зробіть з нього текст VarTextHello.
+        Створіть функцію яка буде заповнювати масив 10 іксами за допомогою циклу.
+        Створіть маасив на 50 елементів та заповніть кожен елемент його номером, не використовуючи цикли, виведіть кожен непарний елемент у параграфі, а парний у дівці.
+        Якщо змінна a більше нуля - то ggg запишемо функцію, яка виводить один !, інакше запишемо функцію, яка виводить два !
+        Використовуючи CallBack function, створіть калькулятор, який буде від користувача приймати 2 числа і знак арефметичної операції. При введенні не числа або при розподілі на 0 виводити помилку.
+        Функція ggg приймає 2 параметри: анонімну функцію, яка повертає 3 та анонімну функцію, яка повертає 4. Поверніть результатом функції ggg суму 3 та 4.
+        Зробіть функцію, яка рахує та виводить кількість своїх викликів.
+        */
+
+        //Зробіть функцію, яка приймає параметром число від 1 до 7, а повертає день тижня українською мовою;
+
+        const num = Math.floor(Math.random() * 7) + 1;
+
+        function days (day) {
+            switch (day){
+                case 1 : return "Понеділок"
+                case 2 : return "ВТ"
+                case 3 : return "СР"
+                case 4 : return "ЧТ"
+                case 5 : return "ПТ"
+                case 6 : return "СБ"
+                case 7 : return "НД"
+                default : console.error("Помилка")
+            }
+        } 
+
+        //Створіть функцію яка буде заповнювати масив 10 іксами за допомогою циклу.
+
+        const arr = []
+
+        function loopX () {
+            for(let i = 0; i < 10; i++){
+                arr.push("X")
+            }
+        }
+
+        //Якщо змінна a більше нуля - то ggg запишемо функцію, яка виводить один !, 
+        //інакше запишемо функцію, яка виводить два !
+
+        function ggg (a) {
+            if(a > 0){
+                return function () {
+                    console.log(1);
+                };
+            }else{
+                return function () {
+                    console.log(2);
+                };
+            }
+        }
+
+        // Функція ggg приймає 2 параметри: анонімну функцію, яка повертає 3 та анонімну функцію, 
+        //яка повертає 4. Поверніть результатом функції ggg суму 3 та 4.
+
+       function ggg (cb1, cb2) {
+        console.log(cb1() + cb2());
+       }
+
+       //ggg(function () {return 3 }, function () { return 4})
+
+    </script>
+
+    <style>
+        .user{
+            width: 500px;
+            height: 150px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-auto-rows: 150px;
+            border: 1px solid black;
+        }
+        .user-image img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+<button>додати персонаж</button>
+    <div class="user">
+        <div class="user-image">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/2/2f/Jerry_Mouse.png" alt="">
+        </div>
+        <div class="user-info">
+            <div><span>Імя</span>Jery</div>
+            <div><span>Прізвище</span>Jery</div>
+            <div><span>Вік</span>50</div>
+            <div><span>Телефон</span>???</div>
+            <div><span>Пошта</span>???</div>
+        </div>
+    </div>
+    -->
+</body>
+
+</html>
